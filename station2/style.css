@@ -30,13 +30,13 @@ body {
 
 
 
+body {
     background: linear-gradient(
         135deg,
-        #f9dce5,
-        #f6bfd1
+        #fce4ec,
+        #f8c9d8
     );
 }
-
 
 
 /* =====================================================
@@ -346,7 +346,7 @@ body {
 
     background:
 
-        rgba(255,255,255,.35);
+        rgba(255,255,255,.45);
 
 
 
@@ -635,7 +635,7 @@ body {
 
 
 
-    background:#d98ca8;
+    background:#d98fa8;
 
 
     color:white;
@@ -667,7 +667,7 @@ body {
 #continue-button:hover {
    
    button:hover {
-    background: #c97898;
+    background: #c97895;
 
 
 
