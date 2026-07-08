@@ -312,75 +312,75 @@ button.addEventListener(
 
 
 /* =====================================================
-   BLÜTEN ERZEUGEN
+   BLÜTEN ERZEUGEN - STATION 3 ROSÉ VARIANTE
 ===================================================== */
 
-
 const petalContainer =
-    document.getElementById(
-        "petal-container"
-    );
+    document.getElementById("petal-container");
 
 
+if (petalContainer) {
 
-if(petalContainer){
+    const petalColors = [
+        "#d8a6b8", // Altrosa
+        "#e3b8c7", // zartes Rosé
+        "#c98fa8", // etwas kräftiger
+        "#f0cfd9"  // helles Rosa
+    ];
 
 
-
-    for(let i=0;i<12;i++){
-
+    for (let i = 0; i < 12; i++) {
 
 
         const petal =
-            document.createElement(
-                "div"
-            );
-
+            document.createElement("div");
 
 
         petal.className =
             "petal";
 
 
-
         petal.innerHTML =
             "❀";
 
 
-
         petal.style.left =
-            Math.random()*100 + "%";
-
+            Math.random() * 100 + "%";
 
 
         petal.style.fontSize =
-            (12 + Math.random()*12)
-            + "px";
-
+            (12 + Math.random() * 12) + "px";
 
 
         petal.style.animationDuration =
-            (10 + Math.random()*12)
-            + "s";
-
+            (10 + Math.random() * 12) + "s";
 
 
         petal.style.animationDelay =
-            (-Math.random()*15)
-            + "s";
+            (-Math.random() * 15) + "s";
 
+
+        // zufällige Rosé-Farbe
+        petal.style.color =
+            petalColors[
+                Math.floor(
+                    Math.random() * petalColors.length
+                )
+            ];
+
+
+        // leichter Glanz
+        petal.style.textShadow =
+            "0 2px 5px rgba(120,80,90,0.25)";
 
 
         petalContainer.appendChild(
             petal
         );
 
-
     }
 
-
 }
-
 
 
 
