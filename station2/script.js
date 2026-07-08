@@ -401,3 +401,19 @@ setInterval(
     updateCountdown,
     1000
 );
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        const intro = document.getElementById("intro");
+
+        if (intro) {
+
+            intro.classList.add("hide");
+
+        }
+
+    }, 1400);
+
+});
