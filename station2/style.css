@@ -44,21 +44,26 @@ body {
 ===================================================== */
 
 
+/* =====================================================
+   INTRO
+===================================================== */
+
+
 #intro {
 
-   
-   position: fixed;
+    position: fixed;
 
     inset: 0;
 
     z-index: 100;
-    
+
 
     display: flex;
 
     justify-content: center;
 
     align-items: center;
+
 
     background:
         linear-gradient(
@@ -68,11 +73,114 @@ body {
             #eab0c7 100%
         );
 
-    animation-name: introOut;
-    animation-duration: 1.4s;
-    animation-delay: 1.4s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
+}
+
+
+
+#intro.hide {
+
+    animation:
+
+        introOut 1.4s ease forwards;
+
+}
+
+
+
+.intro-content {
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+
+.intro-content h1 {
+
+
+    margin: 0;
+
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+
+    font-size:
+        clamp(2.5rem, 8vw, 4rem);
+
+
+    font-weight: 500;
+
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.heart {
+
+
+    margin-top: 15px;
+
+
+    font-size: 2.5rem;
+
+
+    color: #ffd6e3;
+
+
+    animation:
+
+        heartbeat 1.2s infinite;
+
+}
+
+
+
+
+@keyframes heartbeat {
+
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+    }
+
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+
+}
+
+
+
+
+@keyframes introOut {
+
+
+    from {
+
+        transform: translateY(0);
+
+    }
+
+
+    to {
+
+        transform: translateY(-110%);
+
+    }
+
 
 }
 
