@@ -8,7 +8,7 @@ const config = {
 
 
     // Countdown endet:
-    targetDate: "2026-07-18T12:00:00",
+    targetDate: "2026-07-08T23:30:00",
 
 
 
