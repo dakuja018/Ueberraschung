@@ -29,7 +29,7 @@ body {
         #4a2635;
 
 
-body {
+
     background: linear-gradient(
         135deg,
         #f9dce5,
@@ -635,7 +635,7 @@ body {
 
 
 
-    background:#b85c7a;
+    background:#d98ca8;
 
 
     color:white;
@@ -665,6 +665,10 @@ body {
 
 
 #continue-button:hover {
+   
+   button:hover {
+    background: #c97898;
+
 
 
     transform:
