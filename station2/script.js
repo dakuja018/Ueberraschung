@@ -8,12 +8,12 @@ const config = {
 
 
     // Countdown endet:
-    targetDate: "2026-07-18T12:00:00",
+    targetDate: "2026-07-26T8:00:00",
 
 
 
     // Ziel nach Ablauf:
-    nextPage: "/station2/"
+    nextPage: "/Ueberaschung/station3/"
 
 
 };
