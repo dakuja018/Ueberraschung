@@ -245,9 +245,8 @@ body {
 .petal {
     position: absolute;
     top: -40px;
-    color: #f5e7cf;
     opacity: 0.9;
-    filter: drop-shadow(0 2px 4px rgba(120, 80, 40, 0.15));
+    filter: drop-shadow(0 2px 4px rgba(120, 80, 70, 0.2));
     animation: fallingPetal linear infinite;
 }
 
