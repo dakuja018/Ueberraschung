@@ -12,7 +12,7 @@ const config = {
 
 
 
-    // Ziel nach Ablauf:
+    // Ziel nach Ablauf:  
     nextPage: "station2/"
 
 
