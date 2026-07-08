@@ -19,21 +19,19 @@ body {
 
     overflow-x: hidden;
 
-
     font-family:
         "Montserrat",
         sans-serif;
 
-
     color:
-        #4a2635;
-
+        #5f4634;
 
     background:
         linear-gradient(
             135deg,
-            #fce4ec,
-            #f8c9d8
+            #fffaf4 0%,
+            #f8ecd9 45%,
+            #efd8b3 100%
         );
 
 }
