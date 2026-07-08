@@ -19,29 +19,23 @@ body {
 
     overflow-x: hidden;
 
-
     font-family:
         "Montserrat",
         sans-serif;
 
-
     color:
-        #4a2635;
-
+        #5d4636;
 
     background:
         linear-gradient(
             135deg,
-            #fce4ec,
-            #f8c9d8
+            #fffaf5 0%,
+            #f7ead6 55%,
+            #efd8b6 100%
         );
 
 }
 
-
-/* =====================================================
-   INTRO
-===================================================== */
 
 
 /* =====================================================
@@ -65,13 +59,13 @@ body {
     align-items: center;
 
 
-    background:
-        linear-gradient(
-            180deg,
-            #000000 0%,
-            #000000 35%,
-            #eab0c7 100%
-        );
+background:
+    linear-gradient(
+        180deg,
+        #000000 0%,
+        #000000 35%,
+        #f2e3cb 100%
+    );
 
 }
 
@@ -328,87 +322,56 @@ body {
 
 .card {
 
-
     width:
-
         min(90vw,600px);
 
-
-
     padding:
-
         45px 30px;
-
-
 
     text-align:center;
 
-
-
     background:
-
-        rgba(255,255,255,.45);
-
-
+        rgba(255,255,255,.52);
 
     backdrop-filter:
-
-        blur(18px);
-
-
+        blur(20px);
 
     -webkit-backdrop-filter:
+        blur(20px);
 
-        blur(18px);
+    border:
+        1px solid rgba(255,255,255,.45);
 
-
-
-    border-radius:30px;
-
-
+    border-radius:32px;
 
     box-shadow:
-
-        0 20px 50px rgba(120,40,70,.18);
-
-
+        0 25px 60px rgba(100,75,35,.15);
 
 }
-
-
-
-
 
 .card h2 {
 
-
     margin:0;
 
-
     font-family:
-
         "Cormorant Garamond",
         serif;
 
-
-
     font-size:
-
         clamp(2rem,5vw,3rem);
 
+    color:
+        #6a5137;
 
 }
 
+.subtitle{
 
-
-.subtitle {
-
+    color:#7c6858;
 
     font-weight:300;
 
-
 }
-
 
 
 
@@ -471,54 +434,38 @@ body {
 
 
 
-.flip-card span {
-
+.flip-card span{
 
     height:100%;
 
-
     display:flex;
-
 
     justify-content:center;
 
-
     align-items:center;
 
-
-
     background:
+        rgba(255,255,255,.72);
 
-        rgba(255,255,255,.55);
+    border:
 
+        1px solid rgba(214,190,145,.45);
 
-
-    border-radius:14px;
-
-
+    border-radius:16px;
 
     font-family:
-
         "Cormorant Garamond",
         serif;
 
-
-
     font-size:3rem;
 
-
+    color:#6a5137;
 
     box-shadow:
 
-        inset 0 0 15px rgba(255,255,255,.5);
+        inset 0 0 18px rgba(255,255,255,.45);
 
-
-
-    transform-origin:
-
-        center top;
-
-
+    transform-origin:center top;
 
 }
 
@@ -614,76 +561,66 @@ body {
 ===================================================== */
 
 
-#continue-button {
-
+#continue-button{
 
     display:none;
 
-
     margin-top:35px;
 
-
-    padding:
-
-        15px 35px;
-
-
+    padding:15px 35px;
 
     border:none;
 
-
     border-radius:40px;
 
+    background:
 
-
-    background:#d98fa8;
-
+        linear-gradient(
+            135deg,
+            #d8b067,
+            #bb8d48
+        );
 
     color:white;
 
-
-
     cursor:pointer;
-
-
 
     font-size:1rem;
 
-
-
     letter-spacing:1px;
 
-
-
-    transition:
-
-        .3s;
-
+    transition:.3s;
 
 }
 
 
 
-
-#continue-button:hover {
-   
-   button:hover {
-    background: #c97895;
-
-
+#continue-button:hover{
 
     transform:
 
         translateY(-3px);
 
-
-
     box-shadow:
 
-        0 10px 25px rgba(120,40,70,.3);
-
+        0 10px 25px rgba(150,115,45,.28);
 
 }
+
+
+
+#continue-button:hover {
+
+    background:#c69a54;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(120,40,70,.3);
+
+}
+
+
 
 
 
