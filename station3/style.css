@@ -243,31 +243,12 @@ body {
 
 
 .petal {
-
-
-    position:absolute;
-
-
-    top:-40px;
-
-
-    color:white;
-
-
-    opacity:.8;
-
-
-    filter:
-        drop-shadow(
-            0 2px 3px rgba(0,0,0,.1)
-        );
-
-
-    animation:
-
-        fallingPetal linear infinite;
-
-
+    position: absolute;
+    top: -40px;
+    color: white;
+    opacity: 0.8;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+    animation: fallingPetal linear infinite;
 }
 
 
