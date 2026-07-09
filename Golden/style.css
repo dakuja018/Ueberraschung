@@ -444,22 +444,16 @@ body {
 ===================================================== */
 
 
-#countdown {
-
+#countdown{
 
     margin-top:40px;
 
-
     display:grid;
 
-
     grid-template-columns:
-
         repeat(2,1fr);
 
-
     gap:18px;
-
 
 }
 
@@ -723,16 +717,14 @@ body {
 
 @media(min-width:700px){
 
+    #countdown{
 
-    #countdown {
+        display:flex;
 
+        justify-content:center;
 
-        grid-template-columns:
-
-            repeat(4,1fr);
-
+        gap:22px;
 
     }
-
 
 }
