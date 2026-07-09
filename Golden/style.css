@@ -37,10 +37,6 @@ body {
 }
 
 
-/* =====================================================
-   INTRO
-===================================================== */
-
 
 /* =====================================================
    INTRO
@@ -219,96 +215,127 @@ body {
 
 
 /* =====================================================
-   BLÜTEN
+   GOLDENE PARTIKEL
 ===================================================== */
 
-
-#petal-container {
-
+#particle-container{
 
     position:fixed;
 
-
     inset:0;
-
 
     pointer-events:none;
 
-
     overflow:hidden;
 
+    z-index:0;
 
 }
 
 
 
-.petal {
-
+.particle{
 
     position:absolute;
 
+    top:-30px;
 
-    top:-40px;
+    border-radius:50%;
 
+    opacity:.75;
 
-    color:white;
-
-
-    opacity:.8;
-
-
-    filter:
-        drop-shadow(
-            0 2px 3px rgba(0,0,0,.1)
+    background:
+        radial-gradient(
+            circle,
+            #fffef3 0%,
+            #ffeaa2 25%,
+            #e6bf59 60%,
+            #b8860b 100%
         );
 
+    box-shadow:
+
+        0 0 4px rgba(255,250,220,.9),
+
+        0 0 10px rgba(255,220,120,.9),
+
+        0 0 22px rgba(212,175,55,.7),
+
+        0 0 40px rgba(212,175,55,.35);
 
     animation:
 
-        fallingPetal linear infinite;
+        floatingGold linear infinite,
 
+        sparkle 3.5s ease-in-out infinite;
 
 }
 
+@keyframes sparkle{
 
+    0%,100%{
 
-@keyframes fallingPetal {
+        opacity:.45;
 
+        filter:brightness(1);
 
-    0% {
+    }
 
+    50%{
+
+        opacity:1;
+
+        filter:brightness(1.6);
+
+    }
+
+}
+
+@keyframes floatingGold{
+
+    0%{
 
         transform:
-
             translateY(-10vh)
-            translateX(0);
+            translateX(0)
+            scale(.6);
 
-
-    }
-
-
-
-    50% {
-
-
-        transform:
-
-            translateY(50vh)
-            translateX(35px);
-
+        opacity:0;
 
     }
 
+    15%{
 
+        opacity:.9;
 
-    100% {
+    }
 
+    35%{
 
         transform:
+            translateY(35vh)
+            translateX(30px)
+            scale(1);
 
+    }
+
+    70%{
+
+        transform:
+            translateY(80vh)
+            translateX(-25px)
+            scale(.85);
+
+    }
+
+    100%{
+
+        transform:
             translateY(110vh)
-            translateX(-25px);
+            translateX(15px)
+            scale(.6);
 
+        opacity:0;
 
     }
 
